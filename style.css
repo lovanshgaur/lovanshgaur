@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+:root{
+    --background: snow;
+    --text: #434242;
+}
+.dark{
+    --background: #434242;
+    --text: snow;
+}
+body{
+    transition: background-color 0.8s ease, color 0.8s ease;
+    background: var(--background);
+     color: var(--text);
+}
+::selection{
+    color: var(--background);
+    background: var(--text);
+    text-shadow: none;
+}
+
+#cursor{
+    pointer-events: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index: 100;
+    background: snow;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+}
+nav #mode{
+    float: right;
+    padding: 0.5rem;
+    margin-right: 2rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all 0.7s ease;
+}
+.dark #mode{
+    transform: rotate(360deg);
+}
+
+.container h1{
+    font-size: 10rem;
+    text-shadow: 2px 2px 1px var(--background);
+    padding: 1rem;
+}
+.container p{
+    font-size: 2rem;
+}
+
+#working{
+    height: 40vh;
+    width: auto;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+}
+
+#loading {
+    display: inline-block;
+    width: 20px;
+    text-align: left;
+    font-weight: bold;
+    animation: dots 1s steps(1,end) infinite;
+}
+
+@keyframes dots {
+    0% { content: ''; }
+    33% { content: '.'; }
+    66% { content: '..'; }
+    100% { content: '...'; }
+}
+
+#name-box{
+    padding: 2rem;
+    position: relative;
+}
+#name-overlay{
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    position: absolute;
+}
+
+
+@media (max-width: 991px) {
+    html {
+      font-size: 75%;
+    }
+  }
+  @media (max-width: 768px) {
+    html {
+      font-size: 55%;
+    }
+  }
+  @media (max-width: 441px) {
+    html {
+      font-size: 45%;
+    }
+  }
+      
