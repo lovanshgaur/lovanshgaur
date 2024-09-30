@@ -121,6 +121,10 @@ nav #mode{
     html {
       font-size: 55%;
     }
+    #cursor{display: none;}
+    #working{
+        width: 35rem;
+    }
   }
   @media (max-width: 441px) {
     html {
