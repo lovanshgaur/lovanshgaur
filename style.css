@@ -125,6 +125,12 @@ nav #mode{
     #working{
         width: 35rem;
     }
+    #name-box{
+        padding:0rem;
+    }
+      #name{
+          font-size: 8rem;
+      }
   }
   @media (max-width: 441px) {
     html {
