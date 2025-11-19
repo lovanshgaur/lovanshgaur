@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Lovansh Gaur</title>
+    <!-- FONTS LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- LENIS -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+
+</head>
+
+<body>
+
+    <div class="noise-overlay"></div>
+    <div class="cursor"></div>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-navlinks">
+            <a href="#work" class="mobile-link">Work</a>
+            <a href="#expertise" class="mobile-link">Capabilities</a>
+            <a href="#journal" class="mobile-link">Journal</a>
+        </div>
+    </div>
+
+    <nav>
+        <div class="container flex-between">
+            <a href="#top" class="logo hover-trigger" id="logo-link">LG.</a>
+            <div class="nav-actions">
+                <div class="nav-links">
+                    <a href="" class="nav-link hover-trigger">Work</a>
+                    <a href="" class="nav-link hover-trigger">Capabilities</a>
+                    <a href="" class="nav-link hover-trigger">Journal</a>
+                </div>
+
+                <button class="theme-toggle hover-trigger" id="theme-toggle" aria-label="Toggle THeme">
+                    <i class="fas fa-sun sun-icon" style="display: none;"></i>
+                    <i class="fas fa-moon moon-icon"></i>
+                </button>
+
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+</body>
+
+</html>
