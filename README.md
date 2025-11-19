@@ -6,6 +6,5 @@ Here are my socials — feel free to hit me up with a "Hi" if you liked my proje
 
 ## Socials
 
-[GitHub](https://github.com/lovanshgaur)  
-[Twitter](https://x.com/thelovanshgaur) 
-
+[GitHub](https://github.com/lovanshgaur)
+[Twitter](https://x.com/thelovanshgaur)
