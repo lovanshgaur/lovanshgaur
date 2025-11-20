@@ -1,3 +1,5 @@
+/* Body CSS */
+
 body {
   background: var(--bg);
   color: var(--text-main);
@@ -111,45 +113,185 @@ nav {
   opacity: 0;
 }
 
-.mobile-menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: var(--bg);
-    z-index: 99;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 4rem 2rem;
-    transform: translateY(-100%);
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-    overflow-y: auto;
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--bg);
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  transform: translateY(-100%);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow-y: auto;
 }
-.mobile-navlinks{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    padding: 3rem 0rem;
+.mobile-navlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0rem;
 }
-.mobile-menu.open{
-    transform: translateY(0);
+.mobile-menu.open {
+  transform: translateY(0);
 }
-.mobile-link{
-    font-family: var(--font-heading);
-    font-size: 2.5rem;
-    color: var(--text-main);
-    opacity: 0;
-    transform: translateY(20px);
+.mobile-link {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--text-main);
+  opacity: 0;
+  transform: translateY(20px);
 }
-.mobile-menu.open .mobile-link{
-    opacity: 1;
-    transform: translateY(0);
+.mobile-menu.open .mobile-link {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* HERO SECTION */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 4rem;
+}
+.hero-content {
+  width: 100%;
+}
+.hero-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  display: block;
+}
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 11vw, 9rem);
+  line-height: 0.95;
+  font-weight: 800;
+  color: var(--text-main);
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+.hero-title span {
+  display: block;
+  overflow: hidden;
+}
+.hero-title .word {
+  transform: translateY(100%);
+  display: block;
+}
+.hero-desc {
+  margin-top: 3rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--text-muted);
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 2rem;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.scroll-line {
+  width: 50px;
+  height: 1px;
+  background: var(--text-muted);
+}
+
+/* Work Section */
+
+.work-section {
+  padding: 10rem 0 5rem;
+}
+.section-header {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  transition: padding 0.3s ease;
+}
+.project-item:hover {
+  padding: 3rem 2rem;
+  background: var(--surface);
+}
+.project-item img {
+  opacity: 0;
+  pointer-events: none;
+  width: 30%;
+  z-index: 999;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+}
+
+.p-info h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-main);
+}
+
+.p-info p {
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+.p-cats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: var(--text-muted);
+}
+
+.see-all-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+/* Hover Reveal Image */
+.hover-reveal {
+  position: fixed;
+  width: 300px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 50;
+  transform: translate(-50%, -50%) scale(0.8);
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}

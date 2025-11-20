@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Lovansh Gaur</title>
-    <!-- FONTS LINKS -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;700;800&display=swap"
         rel="stylesheet">
-    <!-- GSAP -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <!-- LENIS -->
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
-    <!-- Custom CSS -->
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utils.css">
 
@@ -41,12 +40,12 @@
             <a href="#top" class="logo hover-trigger" id="logo-link">LG.</a>
             <div class="nav-actions">
                 <div class="nav-links">
-                    <a href="" class="nav-link hover-trigger">Work</a>
-                    <a href="" class="nav-link hover-trigger">Capabilities</a>
-                    <a href="" class="nav-link hover-trigger">Journal</a>
+                    <a href="#work" class="nav-link hover-trigger">Work</a>
+                    <a href="#expertise" class="nav-link hover-trigger">Capabilities</a>
+                    <a href="#journal" class="nav-link hover-trigger">Journal</a>
                 </div>
 
-                <button class="theme-toggle hover-trigger" id="theme-toggle" aria-label="Toggle THeme">
+                <button class="theme-toggle hover-trigger" id="theme-toggle" aria-label="Toggle Theme">
                     <i class="fas fa-sun sun-icon" style="display: none;"></i>
                     <i class="fas fa-moon moon-icon"></i>
                 </button>
@@ -60,6 +59,92 @@
         </div>
     </nav>
 
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            <div id="top"></div>
+
+            <section class="hero container">
+                <div class="hero-content">
+                    <span class="hero-label">Full Stack Engineer</span>
+                    <h1 class="hero-title">
+                        <span>
+                            <div class="word">LOVANSH</div>
+                        </span>
+                        <span>
+                            <div class="word">GAUR.</div>
+                        </span>
+                    </h1>
+                    <div class="grid-2">
+                        <p class="hero-desc">
+                          Crafting minimal, motion-driven web experiences with Vanilla JavaScript, GSAP, and early explorations in Three.js. Focused on clean UI, intuitive interactions, and fast, expressive builds powered by simple backend tools.
+                        </p>
+                    </div>
+                </div>
+                <div class="scroll-down hover-trigger">
+                    <div class="scroll-line"></div>
+                    <span onclick="scrollDown()">About Me</span>
+                </div>
+            </section>
+
+            <section id="work" class="work-section container">
+                <h2 class="section-header">Selected Works</h2>
+
+                <div class="project-list">
+                    <a href="#" class="project-item hover-trigger">
+                        <img src="./img/tgc-proj.png"
+                            alt="">
+                        <div class="p-info">
+                            <h3>ThGreyCafe</h3>
+                            <p>The caffeine that loves you.</p>
+                        </div>
+                        <div class="p-cats">
+                            <span>Javascript</span>
+                            <span>/</span>
+                            <span>GSAP</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="project-item hover-trigger">
+                        <img src="./img/gg-proj.png"
+                            alt="">
+                        <div class="p-info">
+                            <h3>GreekGeek </h3>
+                            <p>Greek mythology into the hands of developers, researchers, and enthusiasts. </p>
+                        </div>
+                        <div class="p-cats">
+                            <span>Javascript</span>
+                            <span>/</span>
+                            <span>Node</span>
+                            <span>/</span>
+                            <span>REST API</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="project-item hover-trigger">
+                        <img src="./img/folio-proj.png"
+                            alt="">
+                        <div class="p-info">
+                            <h3>Personal Portfolio</h3>
+                            <p>Made to showcase skills, elegance and visual peace.</p>
+                        </div>
+                        <div class="p-cats">
+                            <span>Javascript</span>
+                            <span>/</span>
+                            <span>GSAP</span>
+                            <span>/</span>
+                            <span>Lenis</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="see-all-container">
+                    <a href="#" class="btn-link hover-trigger">See All Projects &rarr;</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
