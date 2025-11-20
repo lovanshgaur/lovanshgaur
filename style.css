@@ -340,3 +340,62 @@ nav {
   color: var(--text-muted);
   line-height: 1.5;
 }
+
+/* --- ABOUT SECTION --- */
+.about-section {
+  padding: 8rem 0;
+}
+
+.about-text p {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+}
+
+.about-text p strong {
+  color: var(--text-main);
+  font-weight: 400;
+}
+
+.about-meta {
+  display: flex;
+  gap: 4rem;
+  margin-top: 4rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.meta-item h5 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.meta-item p {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  font-family: var(--font-heading);
+}
+
+.resume-btn {
+  padding: 1.2rem 2.5rem;
+  border: 1px solid var(--text-main);
+  color: var(--text-main);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  background: transparent;
+  white-space: nowrap;
+}
+
+.resume-btn:hover {
+  background: var(--text-main);
+  color: var(--bg);
+}
