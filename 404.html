@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>404 Not Found | Lovansh Gaur</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="utils.css">
+
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 1rem;
+            box-sizing: border-box;
+        }
+
+        .error-container {
+            padding: 2rem;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .error-code {
+            font-family: var(--font-heading);
+            font-size: clamp(8rem, 25vw, 15rem);
+            line-height: 1;
+            font-weight: 800;
+            color: var(--accent);
+            text-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+            margin-bottom: 2rem;
+            display: block;
+        }
+
+        .error-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .error-message {
+            width: 60%;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .back-home-btn {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            border: 1px solid var(--text-main);
+            color: var(--text-main);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+
+        .back-home-btn:hover {
+            background: var(--text-main);
+            color: var(--bg);
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: inherit;
+            cursor: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem;
+            z-index: 101;
+            position: fixed;
+            top: 2.5%;
+            right: 2.5%;
+        }
+
+        .theme-toggle i {
+            font-size: 22px;
+            fill: currentColor;
+        }
+
+        @media (max-width: 600px) {
+            html {
+                font-size: 60%;
+            }
+
+            .error-container {
+                padding: 1rem;
+            }
+
+            .error-code {
+                font-size: clamp(6rem, 25vw, 15rem);
+            }
+
+            .error-title {
+                font-size: 1.8rem;
+            }
+
+            .error-message {
+                font-size: 1rem;
+            }
+
+            .theme-toggle {
+                top: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="noise-overlay"></div>
+    <div class="cursor"></div>
+    <button class="theme-toggle hover-trigger" id="theme-toggle" aria-label="Toggle Theme">
+        <i class="fas fa-sun sun-icon" style="display: none;"></i>
+        <i class="fas fa-moon moon-icon"></i>
+    </button>
+
+    <main class="error-container">
+        <span class="error-code">404</span>
+        <h1 class="error-title">Page Not Found.</h1>
+        <p class="error-message">
+            It looks like the page you were looking for was either moved, deleted, or never existed.
+            The internet can be a tricky place!
+        </p>
+        <a href="/" class="back-home-btn hover-trigger">
+            &larr; Return to Homepage
+        </a>
+    </main>
+
+    <script>
+        const cursor = document.querySelector('.cursor');
+        const hoverTriggers = document.querySelectorAll('.hover-trigger');
+
+        if (window.matchMedia("(pointer: fine)").matches) {
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            });
+
+            hoverTriggers.forEach(link => {
+                link.addEventListener('mouseenter', () => {
+                    cursor.classList.add('hovered');
+                });
+                link.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('hovered');
+                });
+            });
+        }
+
+        const themeToggle = document.getElementById('theme-toggle');
+        const sunIcon = document.querySelector('.sun-icon');
+        const moonIcon = document.querySelector('.moon-icon');
+        const htmlElement = document.documentElement;
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            htmlElement.setAttribute('data-theme', 'light');
+            sunIcon.style.display = 'block';
+            moonIcon.style.display = 'none';
+        } else {
+            htmlElement.setAttribute('data-theme', 'dark');
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+
+            if (newTheme === 'light') {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            } else {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            }
+        });
+
+    </script>
+</body>
+
+</html>
