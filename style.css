@@ -36,13 +36,17 @@
   display: block;
 }
 .hero-desc {
-  margin-top: 3rem;
   font-size: clamp(1rem, 2vw, 1.2rem);
   color: var(--text-muted);
   max-width: 500px;
   line-height: 1.6;
 }
-
+.hero-desc:nth-child(1){
+  margin-top: 3rem;
+}
+.hero-desc:nth-child(2){
+  margin-top: 0rem;  
+}
 .scroll-down {
   position: absolute;
   bottom: 2rem;
@@ -106,6 +110,7 @@
 .p-info p {
   color: var(--text-muted);
   font-size: 1rem;
+  max-width: 85%;
 }
 
 .p-cats {
@@ -118,7 +123,9 @@
   border-radius: 50px;
   color: var(--text-muted);
 }
-
+.p-cats span{
+  width: max-content;
+}
 .see-all-container {
   display: flex;
   justify-content: flex-end;
@@ -210,6 +217,8 @@
   margin-top: 4rem;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: flex-end;
+
 }
 
 .meta-item h5 {
@@ -238,6 +247,7 @@
   transition: all 0.3s ease;
   background: transparent;
   white-space: nowrap;
+
 }
 
 .resume-btn:hover {
