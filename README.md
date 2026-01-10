@@ -1,27 +1,13 @@
 <!-- Header -->
-<h1 align="left">Hi, I'm Lavi 👋</h1>
-<h3 align="left">Frontend Developer • Builder • Systems Thinker</h3>
+<h1 align="left">Hi, I'm Lovansh Gaur</h1>
+<h3 align="left">Web Developer • Builder • Writer</h3>
 
-<p align="left">
-  <a href="https://www.linkedin.com/in/YOUR_LINKEDIN/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" />
-  </a>
-  <a href="https://twitter.com/YOUR_TWITTER" target="_blank">
-    <img src="https://skillicons.dev/icons?i=github" />
-  </a>
-  <a href="https://YOUR_PORTFOLIO_URL" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-111111?style=flat&logo=vercel&logoColor=white" />
-  </a>
-  <a href="mailto:YOUR_EMAIL@gmail.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white" />
-  </a>
-</p>
 
 ---
 
 ## About Me
 
-I’m a frontend developer who likes building **clean systems**, **aesthetic interfaces**, and **products that feel intentional**.  
+I’m a web developer who likes building **clean systems**, **aesthetic interfaces**, and **products that feel intentional**.  
 I work mostly with vanilla web tech, modern CSS, and lightweight libraries—because performance and clarity matter.
 
 - Focus: Frontend Engineering & UI Systems  
@@ -34,7 +20,7 @@ I work mostly with vanilla web tech, modern CSS, and lightweight libraries—bec
 
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,js,git,github,figma,bash,md,nodejs,express,npm,postman,sass,tailwind,vercel,vite,mongodb,vscode&perline=5&theme=light" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,git,github,bash,md,nodejs,express,npm,postman,sass,vite,mongodb,vscode&perline=5&theme=light" />
 </p>
 
 **Also familiar with:**  
@@ -60,13 +46,19 @@ GSAP • Lenis • Swiper • Anime.js • REST APIs • Responsive Design • W
 
 ---
 
+## WakaTime Data
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
+
 ## Let’s Connect
 
 If you’re building something interesting, or just want to talk about design, systems, or the web:
 
-- LinkedIn: https://www.linkedin.com/in/YOUR_LINKEDIN/  
-- Twitter (X): https://twitter.com/YOUR_TWITTER  
-- Portfolio: https://YOUR_PORTFOLIO_URL  
+- [Portfolio](https://lovansh.me/) 
+- [LinkedIn](https://www.linkedin.com/in/lovanshgaur)
+- [Twitter(X)](https://x.com/thelovanshgaur)
+- [Instagram](https://www.instagram.com/thelovanshgaur)
 
 ---
 
