@@ -48,6 +48,15 @@ GSAP • Lenis • Swiper • Anime.js • REST APIs • Responsive Design • W
 
 ## WakaTime Data
 <!--START_SECTION:waka-->
+
+```txt
+JavaScript   3 hrs 42 mins   █████████▒░░░░░░░░░░░░░░░   37.97 %
+Markdown     3 hrs 11 mins   ████████▒░░░░░░░░░░░░░░░░   32.76 %
+HTML         1 hr 52 mins    ████▓░░░░░░░░░░░░░░░░░░░░   19.18 %
+CSS          48 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   08.29 %
+JSON         8 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.41 %
+```
+
 <!--END_SECTION:waka-->
 
 
