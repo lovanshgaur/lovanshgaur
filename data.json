@@ -1,0 +1,103 @@
+{
+  "works": [
+    {
+      "id": 1,
+      "title": "Personal Portfolio",
+      "desc": "Personal portfolio website showcasing frontend skills, motion design, and clean UI patterns. Built with HTML, CSS, and JavaScript with a focus on responsiveness, performance, and visual clarity.",
+      "img": "img/folio-proj.png",
+      "year": 2025,
+      "tags": ["JavaScript", "GSAP", "Motion Design"],
+      "link": "https://lovansh.me",
+      "toDisplay": true,
+      "toShowcase": true
+    },
+    {
+      "id": 2,
+      "title": "GreekGeek",
+      "desc": "Interactive frontend application backed by a RESTful API, designed to provide structured information about Greek mythology. Built with Javascript and Node.js, featuring dynamic content rendering and user-friendly navigation.",
+      "img": "img/gg-proj.png",
+      "year": 2024,
+      "tags": ["JavaScript", "Node.js", "MongoDB"],
+      "link": "https://greekgeek.lovansh.me",
+      "toDisplay": true,
+      "toShowcase": true
+    },
+    {
+      "id": 3,
+      "title": "ToneTrove",
+      "desc": "Minimal color-palette generator that helps designers and developers create, refine, and                                export clean color systems instantly",
+      "img": "img/tt-proj.png",
+      "year": 2025,
+      "tags": ["JavaScript", "Data Visualization", "UI Tooling"],
+      "link": "https://tonetrove.lovansh.me",
+      "toDisplay": true,
+      "toShowcase": true
+    },
+    {
+      "id": 4,
+      "title": "TheCoffeeSoul",
+      "desc": "Responsive landing page for a local cafe. Built with HTML, CSS, JS. Improved load time and mobile usability",
+      "img": "img/tcs-proj.png",
+      "year": 2025,
+      "tags": ["JavaScript", "Responsive Design", "Landing Page"],
+      "link": "https://works.lovansh.me/thecoffeesoul/",
+      "toDisplay": true,
+      "toShowcase": true
+    },
+    {
+      "id": 5,
+        "title": "TheJainOutlet",
+        "desc": "A landing page for an beautiful restaurant in India. Built with HTML, CSS, JS. Focused on aesthetics and user experience.",
+        "img": "img/tjo-proj.png",
+        "year": 2025,
+        "tags": ["JavaScript", "Responsive Design", "Landing Page"],
+        "link": "https://works.lovansh.me/thejainoutlet/",
+        "toDisplay": true,
+        "toShowcase": true
+    },
+    {
+      "id": 6,
+        "title": "PixelVerse",
+        "desc": "Landing page for a fictional metaverse company. Built with HTML, CSS, JS. Emphasized modern design trends and interactivity.",
+        "img": "img/pv-proj.png",
+        "year": 2025,
+        "tags": ["MongoDB", "Express", "React", "Node.js"],
+        "link": "https://works.lovansh.me/pixelverse/",
+        "toDisplay": true,
+        "toShowcase": false
+    },
+    {
+      "id": 7,
+        "title": "HeritageValleySchool",
+        "desc": "A responsive landing page for a school in Jaipur. Built with HTML, CSS, JS. Focused on aesthetics and user experience.",
+        "img": "img/hvs-proj.png",
+        "year": 2025,
+        "tags": ["JavaScript", "Responsive Design", "Landing Page"],
+        "link": "https://heritagevalleyschool.lovansh.me/",
+        "toDisplay": false,
+        "toShowcase": false
+    },
+    {
+      "id": 8,
+        "title": "OmniMob.World",
+        "desc": "A landing page for a modern Software Solutions agency. Built with HTML, CSS, JS, gsap, lenis and morden UI/UX. Emphasized modern design trends and interactivity.",
+        "img": "img/om-proj.png",
+        "year": 2025,
+        "tags": ["JavaScript", "Responsive Design", "Landing Page"],
+        "link": "https://omnimob.world/",
+        "toDisplay": true,
+        "toShowcase": false
+    },
+    {
+      "id": 9,
+        "title": "Aman Portfolio",
+        "desc": "A personal portfolio website for a budding developer. Built with HTML, CSS, JS, GSAP and modern UI/UX. Focused on showcasing projects and skills effectively.",
+        "img": "img/aman-proj.png",
+        "year": 2025,
+        "tags": ["JavaScript", "GSAP", "Motion Design"],
+        "link": "https://folios.lovansh.me/Aman",
+        "toDisplay": false,
+        "toShowcase": false
+    }
+  ]
+}
