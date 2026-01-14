@@ -49,34 +49,76 @@ gsap.to('.hero-title', {
 
 // 3. Project Section Logic
 
-if (window.innerWidth > 992) {
-    const projects = document.querySelectorAll('.project-item');
-    var rotate = 0;
-    var diff = 0;
+fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        let works = data.works.filter(item => item.toShowcase === true);
+        displayProjects(works);
+
+    })
+    .catch(error => console.error('Error loading JSON:', error));
+
+let projectsContainer = document.getElementById('project-list');
+
+function displayProjects(projects) {
+
     projects.forEach(project => {
-        project.addEventListener('mousemove', (dets) => {
-            let rect = project.getBoundingClientRect()
-            let y = dets.clientY - rect.top
+        let projectCard = document.createElement('a');
 
-            diff = dets.clientX - rotate;
-            rotate = dets.clientX;
+        projectCard.classList.add('project-item', 'hover-trigger');
+        projectCard.href = project.link;
+        projectCard.target = "_blank";
 
-            gsap.to(project.querySelector("img"), {
-                opacity: 1,
-                ease: Power3,
-                top: y,
-                left: dets.clientX,
-                rotate: gsap.utils.clamp(-20, 20, diff * 0.5)
+        projectCard.innerHTML = `
+                <img src="${project.img}" alt="${project.title}">
 
-            })
-        });
+                <div class="p-info">
+                    <h3 class="p-title">${project.title}</h3>
+                    <p class="p-desc">${project.desc}</p>
+                </div>
 
-        project.addEventListener('mouseleave', () => {
-            gsap.to(project.querySelector("img"), { opacity: 0, scale: 0.8, duration: 0.3, overwrite: true });
-        });
-    });
+                <div class="p-cats">
+                    ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('<span>/</span>')}
+                </div>
+                
+        `;
+        projectsContainer.appendChild(projectCard);
+    })
+    initHover();
 }
 
+function initHover() {
+
+
+    if (window.innerWidth > 992) {
+        const projects = document.querySelectorAll('.project-item');
+        var rotate = 0;
+        var diff = 0;
+        projects.forEach(project => {
+            project.addEventListener('mousemove', (dets) => {
+                let rect = project.getBoundingClientRect()
+                let y = dets.clientY - rect.top
+
+                diff = dets.clientX - rotate;
+                rotate = dets.clientX;
+
+                gsap.to(project.querySelector("img"), {
+                    opacity: 1,
+                    ease: Power3,
+                    top: y,
+                    left: dets.clientX,
+                    rotate: gsap.utils.clamp(-20, 20, diff * 0.5)
+
+                })
+            });
+
+            project.addEventListener('mouseleave', () => {
+                gsap.to(project.querySelector("img"), { opacity: 0, scale: 0.8, duration: 0.3, overwrite: true });
+            });
+        });
+    }
+
+}
 
 // 4. ScrollDown Button Logic
 function scrollDown() {
@@ -185,3 +227,4 @@ document.querySelectorAll('.nav-link, .logo').forEach(anchor => {
         if (targetId !== '#') lenis.scrollTo(targetId);
     });
 });
+
