@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;700;800&display=swap');
 /* Utils */
 :root {
   --bg: #080808;
@@ -115,9 +116,6 @@ svg {
 .grid-2 {
   display: grid;
   gap: 0.75rem;
-}
-.about-section .grid-2 {
-  grid-template-columns: 1fr 1fr;
 }
 
 .btn-link {
@@ -295,6 +293,9 @@ nav {
 
 /* Responsive CSS */
 @media (max-width: 992px) {
+  html {
+    font-size: 80%;
+  }
   .nav-links {
     display: none;
   }
@@ -338,6 +339,15 @@ nav {
 
   .p-cats {
     display: none;
+  }
+  .about-meta {
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .meta-item{
+    flex: 1;
+    width: 100%;
   }
   .footer-content {
     grid-template-columns: 1fr;
