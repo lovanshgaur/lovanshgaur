@@ -5,7 +5,7 @@
       "title": "GridHome",
       "desc": "Luxury furniture brand experience focused on spatial storytelling, editorial layouts, and refined minimal interactions. Built to showcase premium collections with a calm, high-end visual rhythm.",
       "img": "img/gridhome-proj.png",
-      "year": 2025,
+      "year": 2026,
       "tags": [
         "Brand Experience",
         "Luxury UI",
@@ -21,7 +21,7 @@
       "title": "IronCore",
       "desc": "High-conversion gym landing page designed for performance marketing. Bold typography, dark UI system, and structured pricing architecture crafted to drive memberships and local trust.",
       "img": "img/ironcore-proj.png",
-      "year": 2025,
+      "year": 2026,
       "tags": [
         "Commercial Landing Page",
         "Conversion-Focused Design",
@@ -51,17 +51,28 @@
       "year": 2024,
       "tags": ["JavaScript", "Node.js", "MongoDB"],
       "link": "https://greekgeek.lovansh.me",
-      "toDisplay": true,
-      "toShowcase": true
+      "toDisplay": false,
+      "toShowcase": false
     },
     {
       "id": 5,
       "title": "ToneTrove",
-      "desc": "Minimal color-palette generator that helps designers and developers create, refine, and                                export clean color systems instantly",
+      "desc": "Minimal color-palette generator that helps designers and developers create, refine, and export clean color systems instantly",
       "img": "img/tt-proj.png",
       "year": 2025,
       "tags": ["JavaScript", "Data Visualization", "UI Tooling"],
       "link": "https://tonetrove.lovansh.me",
+      "toDisplay": false,
+      "toShowcase": false
+    },
+    {
+      "id": 6,
+      "title": "Crumb&Brew",
+      "desc": "A high-performance, mobile-first direct ordering website for a Jaipur-based fusion food brand, built using Vanilla JS and GSAP with custom state management and conversion-focused UX.",
+      "img": "img/cb-proj.png",
+      "year": 2026,
+      "tags": ["GSAP", "Brand Identity", "Minimalism"],
+      "link": "http://brands.lovansh.me/CrumbBrew/",
       "toDisplay": true,
       "toShowcase": true
     }
