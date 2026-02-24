@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;700;800&display=swap");
 /* Utils */
 :root {
   --bg: #080808;
@@ -213,7 +213,7 @@ nav {
   position: relative;
 }
 .theme-toggle i {
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 /* Hamburger */
@@ -222,32 +222,43 @@ nav {
   background: none;
   border: none;
   cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.5rem;
+
   width: 30px;
-  height: 30px;
-  margin-left: 1.5rem;
-  z-index: 101;
+  height: 24px;
   position: relative;
+  z-index: 101;
 }
+
 .hamburger span {
-  display: block;
+  position: absolute;
+  left: 0;
   width: 100%;
   height: 2px;
   background: currentColor;
+
   transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
+    transform 0.35s cubic-bezier(0.77, 0, 0.18, 1),
+    top 0.35s ease;
+  transform-origin: center;
 }
+
+.hamburger span:nth-child(1) {
+  top: 6px;
+}
+
+.hamburger span:nth-child(2) {
+  bottom: 6px;
+}
+
 .hamburger.active span:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
 }
-.hamburger.active span:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
-}
+
 .hamburger.active span:nth-child(2) {
-  opacity: 0;
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 .mobile-menu {
@@ -261,7 +272,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
   padding: 4rem 2rem;
   transform: translateY(-100%);
@@ -272,18 +283,19 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
-  padding: 3rem 0rem;
+  padding: 6rem 0rem;
+  height: 100%;
 }
 .mobile-menu.open {
   transform: translateY(0);
 }
 .mobile-link {
   font-family: var(--font-heading);
-  font-size: 2.5rem;
   color: var(--text-main);
   opacity: 0;
+  font-size: 4rem;
   transform: translateY(20px);
 }
 .mobile-menu.open .mobile-link {
@@ -345,13 +357,17 @@ nav {
     margin-top: 2rem;
     flex-direction: column;
   }
-  .meta-item{
+  .meta-item {
     flex: 1;
     width: 100%;
   }
+  .footer-cta {
+    margin: 0;
+  }
   .footer-content {
+    padding-top: 1rem;
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 0rem;
   }
 
   .footer-bottom {
