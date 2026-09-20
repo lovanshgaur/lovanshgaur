@@ -50,9 +50,8 @@ GSAP • Lenis • Swiper • Anime.js • REST APIs • Responsive Design • W
 <!--START_SECTION:waka-->
 
 ```txt
-HTML       33 mins               ███████████████████▓░░░░░   78.24 %
-Markdown   9 mins                █████▒░░░░░░░░░░░░░░░░░░░   21.25 %
-CSS        0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.51 %
+HTML       8 mins                █████████████████████████   99.57 %
+Markdown   0 secs                ░░░░░░░░░░░░░░░░░░░░░░░░░   00.43 %
 ```
 
 <!--END_SECTION:waka-->
